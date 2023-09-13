@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+ul,
+ol,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.475);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.btnLog {
+  width: 50%;
+  height: 40px;
+  background-color: blue;
+  color: #fff;
+}
+/* 
+    df
+    aic
+    jcc
+*/
+#log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nick {
+  font-size: 24px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.4s ease;
+}
+
+.nick:hover {
+  color: crimson;
+}
+
+.ava {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.out {
+  background-color: black;
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.out:hover {
+  background-color: white;
+  color: black;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.item {
+  border: solid 1px gray;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 32px;
+  transition: linear all 0.6s;
+}
+
+.item:hover {
+  color: white;
+  background-color: gray;
+}
