@@ -107,53 +107,53 @@ nick.addEventListener("click", (e) => {
       let title = document.head;
       title.children[2].innerHTML = `${userName} profile`;
       let nickInfo = json.filter((user) => user.username === userName);
-      // if (!Boolean(ul)) {
-      //   createInfo(nickInfo[0]);
-      // }
+      if (!Boolean(ul)) {
+        createInfo(nickInfo[0]);
+      }
     });
 });
 
-// function createInfo(obj) {
-//   let app = document.getElementById("app");
-//   let li;
-//   ul = document.createElement("ul");
-//   ul.classList.add("list-item");
-//   let arr = [obj.name, obj.email, obj.id, obj.address.street, obj.address.city];
-//   let arr2 = ["name", "email", "id", "street", "city"];
-//   for (const ar in arr) {
-//     li = document.createElement("li");
-//     li.textContent = `${arr2[ar]}: ${arr[ar]}`;
-//     li.classList.add("item");
-//     ul.append(li);
-//   }
-//   app.append(ul);
-// }
+function createInfo(obj) {
+  let app = document.getElementById("app");
+  let li;
+  ul = document.createElement("ul");
+  ul.classList.add("list-item");
+  let arr = [obj.name, obj.email, obj.id, obj.address.street, obj.address.city];
+  let arr2 = ["name", "email", "id", "street", "city"];
+  for (const ar in arr) {
+    li = document.createElement("li");
+    li.textContent = `${arr2[ar]}: ${arr[ar]}`;
+    li.classList.add("item");
+    ul.append(li);
+  }
+  app.append(ul);
+}
 
-let categoriesBtn = document.querySelectorAll(".categories");
-categoriesBtn.forEach((btn) =>
-  btn.addEventListener("click", function () {
-    categoriesBtn.forEach((btn) => {
-      btn.classList.remove("active");
-    });
+// let categoriesBtn = document.querySelectorAll(".categories");
+// categoriesBtn.forEach((btn) =>
+//   btn.addEventListener("click", function () {
+//     categoriesBtn.forEach((btn) => {
+//       btn.classList.remove("active");
+//     });
 
-    this.classList.add("active");
-    productRes.innerHTML = "";
-    let ress = `https://fakestoreapi.com/products/category/${this.id}`;
-    getProduct(ress);
-  })
-);
+//     this.classList.add("active");
+//     productRes.innerHTML = "";
+//     let ress = `https://fakestoreapi.com/products/category/${this.id}`;
+//     getProduct(ress);
+//   })
+// );
 
-let find = document.getElementById("find");
-find.addEventListener("input", function () {
-  console.log(this.value);
-});
+// let find = document.getElementById("find");
+// find.addEventListener("input", function () {
+//   console.log(this.value);
+// });
 
-let range = document.getElementById("range");
+// let range = document.getElementById("range");
 
-range.addEventListener("mouseup", function () {
-  console.log(this.value);
-});
+// range.addEventListener("mouseup", function () {
+//   console.log(this.value);
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-  getProduct("");
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   getProduct("");
+// });
