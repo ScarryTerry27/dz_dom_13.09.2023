@@ -124,7 +124,7 @@ input {
   color: black;
 }
 
-/* .list-item {
+.list-item {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -141,7 +141,7 @@ input {
 .item:hover {
   color: white;
   background-color: gray;
-} */
+}
 
 .bug {
   position: relative;
